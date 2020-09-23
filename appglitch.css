@@ -1,0 +1,58 @@
+.conteiner {
+   width: 1280px;
+   border: 1px solid black;
+   margin: 0 auto;
+   display: flex;
+}
+
+.buttonStyle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    height: 67px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: lightseagreen;
+    font-size: 20px;
+}
+
+.buttonStyle:hover {background-color: #40e7d1}
+
+.buttonStyle:active {
+  background-color: #40e7d1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.imgContent {
+   border: 1px solid black;
+}
+
+.rightContent {
+   display: flex;
+   flex-direction: row;
+   background-color: lightseagreen;
+   border-bottom: 1px solid black;
+   height: 67px;
+   font-size: 20px;
+   
+}
+
+.colorBending {
+   border: 1px solid black;
+   min-width: 287px;
+   text-align: center;
+}
+
+.pixelSorting {
+   border: 1px solid black;
+   min-width: 287px;
+   text-align: center;
+}
+
+fieldset {
+   border: 0 none;
+   
+}
