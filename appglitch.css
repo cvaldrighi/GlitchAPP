@@ -33,11 +33,14 @@
 .rightContent {
    display: flex;
    flex-direction: row;
-   background-color: lightseagreen;
    border-bottom: 1px solid black;
-   height: 67px;
    font-size: 20px;
    
+}
+
+.rightContentHeader {
+   background-color: lightseagreen;
+   height: 67px;
 }
 
 .colorBending {
@@ -52,7 +55,25 @@
    text-align: center;
 }
 
+h3 {
+   margin: 0px;
+}
+
+.rightContentHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
 fieldset {
    border: 0 none;
-   
+}
+
+.inputSize {
+   width: 50px;
+}
+
+.value {
+   padding: 10px 5px;
+
 }
