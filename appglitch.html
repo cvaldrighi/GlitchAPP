@@ -8,7 +8,7 @@
         <div class="conteiner">
             <div class="leftContent">
                 <button class="buttonStyle">Upload</button>
-                <button class="buttonStyle">Camera</button>
+                <button id="btnCam" class="buttonStyle">Camera</button>
                 <button class="buttonStyle">Save</button>
                 <button class="buttonStyle">Share</button>
                 <button class="buttonStyle">Info</button>
@@ -16,12 +16,11 @@
             </div>
 
             <div class="middleContent">
-                <div class="imgContent">
-                    <img src = "dragImg.png"
-                         alt="Drag or Drop a Image Here"
-                         width="600px"
-                         height="400px">
-                                          
+                <div id="displayImg" class="imgContent">
+                    <video id="displayVideo" class="hidden" autoplay></video>
+                    <button id="btnSS" class="btnSSstyle hidden">Screenshot</button>
+                    <img id="displayImgBg" class="displayImgBg" src="dragImg.png"
+                         alt="Drag or Drop a Image Here">                                                                     
                 </div>
             </div>
 
@@ -31,6 +30,7 @@
                         <h3> Color Bending</h3> 
                     </div>    
                     <form class="value">
+
                         <fieldset>
                             <label>
                               Float Red Value  
@@ -38,6 +38,7 @@
                             <input class="inputSize" type="number" step="0.1" placeholder="0.0"/>
                             <button>OK</button> 
                         </fieldset>
+
                         <fieldset>
                             <label>
                               Float Green Value  
@@ -45,6 +46,7 @@
                             <input class="inputSize" type="number" step="0.1" placeholder="0.0"/>
                             <button>OK</button> 
                         </fieldset>
+
                         <fieldset>
                             <label>
                               Float Blue Value  
@@ -52,6 +54,7 @@
                             <input class="inputSize" type="number" step="0.1" placeholder="0.0"/>
                             <button>OK</button> 
                         </fieldset>
+
                     </form>
                 </div>
 
@@ -64,6 +67,7 @@
                         <label title="vertical">V</label>
                     </div>
                     <form class="value">
+                        
                         <fieldset>
                             <label>
                               Float Satur. Value  
@@ -71,6 +75,7 @@
                             <input class="inputSize" type="number" step="0.1" placeholder="0.0"/>
                             <button>OK</button> 
                         </fieldset>
+                        
                         <fieldset>
                             <label>
                               Float Black Value  
@@ -78,6 +83,7 @@
                             <input class="inputSize" type="number" step="0.1" placeholder="0.0"/>
                             <button>OK</button> 
                         </fieldset>
+                        
                         <fieldset>
                             <label>
                               Float White Value  
@@ -90,5 +96,6 @@
             </div>
 
         </div>
+        <script src="appglitch.js"></script>
     </body>
 </html>

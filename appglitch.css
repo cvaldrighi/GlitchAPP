@@ -26,8 +26,25 @@
   transform: translateY(4px);
 }
 
+.btnSSstyle {
+   position:absolute;
+   bottom: -73px;
+   left: 215;
+   background-color: lightseagreen;
+   box-shadow: 0 1px #666;
+}
+
 .imgContent {
    border: 1px solid black;
+}
+
+.hidden {
+   display: none;
+}
+
+.displayImgBg {
+   width: 600px;
+   height: 400px;
 }
 
 .rightContent {
