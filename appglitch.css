@@ -28,14 +28,24 @@
 
 .btnSSstyle {
    position:absolute;
-   bottom: -73px;
-   left: 215;
+   bottom: 10px;
+   left: 10px;
    background-color: lightseagreen;
    box-shadow: 0 1px #666;
+   width: 84px;
+} 
+
+.btnReturnStyle {
+   position: absolute;
+   bottom: 10px;
+   left: 100px;
+   box-shadow: 0 1px #666;
+   width: 84px;
 }
 
 .imgContent {
    border: 1px solid black;
+   position: relative;
 }
 
 .hidden {
