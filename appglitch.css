@@ -102,5 +102,9 @@ fieldset {
 
 .value {
    padding: 10px 5px;
+}
 
+.disabled {
+   opacity: 0.8;
+   pointer-events: none;
 }

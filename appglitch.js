@@ -10,7 +10,9 @@ if (hasGetUserMedia()) {
     const displayVideo = document.getElementById("displayVideo");
     const canvas = document.createElement("canvas");
     const constraints = {video: {width:600, height:400}};
-    
+    const btnSave = document.getElementById("btnSave");
+    const btnUpload = document.getElementById("btnUpload");
+    const btnShare = document.getElementById("btnShare");
 
     btnCam.onclick = function() {
         navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
@@ -35,6 +37,9 @@ if (hasGetUserMedia()) {
         displayImgBg.classList.remove("hidden");
         canvas.getContext("2d").drawImage(displayVideo, 0, 0);
         displayImgBg.src = canvas.toDataURL("image/webp");
+        btnSave.href = canvas.toDataURL("image/png");
+        btnSave.classList.remove("disabled");
+        btnShare.classList.remove("disabled");
     };
 
     btnReturn.onclick = function() {
@@ -43,6 +48,12 @@ if (hasGetUserMedia()) {
         btnReturn.classList.add("hidden");
 
     }
+
+    btnUpload.onchange = function() {
+        displayImgBg.src = this.value;
+
+    }
+
 } else {
     alert("Sorry, your browser don't allow this function.");
 }
