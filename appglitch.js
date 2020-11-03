@@ -23,7 +23,7 @@ if (hasGetUserMedia()) {
     };
 
     function handleSuccess(stream) {
-        displayVideo.classList.remove("hidden");
+        displayVideo.classList.remove("hidden"); 
         displayImgBg.classList.add("hidden");
         btnSS.classList.remove("hidden");
         displayVideo.srcObject = stream;
@@ -57,3 +57,4 @@ if (hasGetUserMedia()) {
 } else {
     alert("Sorry, your browser don't allow this function.");
 }
+
